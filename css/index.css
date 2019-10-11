@@ -250,6 +250,11 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images img {
+    margin-right: 4%;
+  }
+}
 .home .visit-planets {
   padding: 15px;
 }
