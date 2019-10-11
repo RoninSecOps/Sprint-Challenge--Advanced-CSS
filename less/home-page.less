@@ -30,6 +30,18 @@
     flex-wrap: wrap;
     width: 100%;
 
+    @media @phone {
+      .flexColumnCenter();
+
+      img.sky,
+      img.launch {
+        display: none;
+      }
+      img.blast {
+        width: 70%;
+      }
+    }
+
     img {
       width: 28%;
       margin: 20px 2.5%;
