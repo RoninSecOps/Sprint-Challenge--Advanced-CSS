@@ -1,1 +1,24 @@
 // Mixins Here
+.center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@phone: ~'(max-width: 500px)';
+
+.btn-custom(@fontColor, @bgColor) {
+  color: @fontColor;
+  background: @bgColor;
+  width: 25%;
+  cursor: url('/img/pointer.png'), auto;
+  border-radius: 5px;
+}
+.customBtnStyle() {
+  border-radius: 5px;
+  text-align: center;
+}
+.flexColumnCenter() {
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
