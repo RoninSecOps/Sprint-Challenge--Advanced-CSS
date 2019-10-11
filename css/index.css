@@ -135,7 +135,7 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
+  color: #5e6164;
 }
 h1,
 h2,
@@ -143,7 +143,7 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
-  color: #23293B;
+  color: #23293b;
 }
 h2 {
   font-size: 3.2rem;
@@ -305,9 +305,83 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn {
+  color: white;
+  background: #23293b;
+  width: 25%;
+  cursor: url('/img/pointer.png'), auto;
+  border-radius: 5px;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+  }
+}
+.home .walk .walk-text .btn:hover {
+  background: #5c6c9b;
+  color: #030303;
+}
+.home .walk .walk-text .btn p {
+  font-size: 1.6rem;
+  padding: 6%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn p {
+    font-weight: bold;
+  }
+}
+.home .walk .walk-text .subBox {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15%;
+  background: white;
+  width: 300px;
+  border-radius: 12px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .subBox {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+.home .walk .walk-text .subBox .txtBox {
+  border-radius: 5px;
+  background: #23293b;
+  width: 220px;
+  border: none;
+}
+.home .walk .walk-text .subBox input {
+  border-radius: 5px;
+  margin-left: 4px;
+  border: none;
+}
+.home .walk .walk-text .subBox button {
+  width: 40px;
+  height: 25px;
+  border-radius: 12px;
+  border: none;
+  background: #23293b;
+  cursor: url('/img/pointer.png'), auto;
+}
+.home .walk .walk-text .subBox button .fa-check {
+  color: red;
+}
+.home .walk .walk-text .subBox button .fa-check:hover {
+  color: #27ae60;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin-bottom: 6%;
+    margin-left: 0;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;

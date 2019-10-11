@@ -1,6 +1,7 @@
 // Home Content
 
 .home {
+  
   .intro {
     @media @phone {
       .flexColumnCenter();
@@ -96,30 +97,70 @@
       p {
         margin-bottom: 26px;
       }
-
       .btn {
         @media @phone {
           width: 100%;
+        }
+        .btn-custom(white, #23293b);
+        .customBtnStyle();
+        &:hover {
+          background: lighten(#23293b, 30%);
+          color: darken(white, 99%);
+        }
+        p {
+          font-size: 1.6rem;
+          padding: 6%;
+          @media @phone {
+            font-weight: bold;
+          }
+        }
       }
-      .btn-custom(white, #23293b);
-      .customBtnStyle();
-      &:hover {
-        background: lighten(#23293b, 30%);
-        color: darken(white, 99%);
-      }
-      p {
-        font-size: 1.6rem;
-        padding: 6%;
+      .subBox {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 15%;
         @media @phone {
-          font-weight: bold;
+          .flexColumnCenter();
+          width: 100%;
+        }
+        background: white;
+        width: 300px;
+        border-radius: 12px;
+        .txtBox {
+          border-radius: 5px;
+          background: #23293b;
+          width: 220px;
+          border: none;
+        }
+        input {
+          border-radius: 5px;
+          margin-left: 4px;
+          border: none;
+        }
+        button {
+          width: 40px;
+          height: 25px;
+          border-radius: 12px;
+          border: none;
+          background: #23293b;
+          cursor: url('/img/pointer.png'), auto;
+          .fa-check {
+            color: red;
+            &:hover {
+              color: #27ae60;
+            }
+          }
         }
       }
     }
-
     .walk-img {
       width: 46%;
       margin-left: 4%;
-
+      @media @phone {
+        width: 100%;
+        margin-bottom: 6%;
+        margin-left: 0;
+      }
       img {
         width: 100%;
         height: auto;
