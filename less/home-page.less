@@ -101,11 +101,11 @@
         @media @phone {
           width: 100%;
         }
-        .btn-custom(white, #23293b);
+        .btn-custom(@white, @darkBlue);
         .customBtnStyle();
         &:hover {
-          background: lighten(#23293b, 30%);
-          color: darken(white, 99%);
+          background: lighten(@darkBlue, 30%);
+          color: darken(@white, 99%);
         }
         p {
           font-size: 1.6rem;
