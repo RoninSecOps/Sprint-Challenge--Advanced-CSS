@@ -78,10 +78,17 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @phone {
+      .flexColumnCenter();
+      width: 100%;
+    }
 
     .walk-text {
       width: 50%;
-
+      @media @phone {
+        width: 100%;
+        order: 2;
+      }
       h3 {
         margin-bottom: 10px;
       }
@@ -91,6 +98,21 @@
       }
 
       .btn {
+        @media @phone {
+          width: 100%;
+      }
+      .btn-custom(white, #23293b);
+      .customBtnStyle();
+      &:hover {
+        background: lighten(#23293b, 30%);
+        color: darken(white, 99%);
+      }
+      p {
+        font-size: 1.6rem;
+        padding: 6%;
+        @media @phone {
+          font-weight: bold;
+        }
       }
     }
 
