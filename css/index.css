@@ -170,6 +170,7 @@ h1 {
   position: fixed;
   width: 100%;
   opacity: 0.9;
+  z-index: 1;
 }
 .fixedNav nav {
   width: 100%;
