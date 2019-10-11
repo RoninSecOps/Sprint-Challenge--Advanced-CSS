@@ -160,6 +160,35 @@ p {
   width: 98%;
   margin: 0 auto;
 }
+h1 {
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+  font-size: 3.4rem;
+}
+.fixedNav {
+  position: fixed;
+  width: 100%;
+  opacity: 0.9;
+}
+.fixedNav nav {
+  width: 100%;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+.fixedNav nav a {
+  cursor: url('/img/pointer.png'), auto;
+  margin: 2% 3%;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
