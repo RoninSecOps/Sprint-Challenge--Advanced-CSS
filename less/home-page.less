@@ -1,35 +1,67 @@
 // Home Content
 
 .home {
-
   .intro {
-
+    @media @phone {
+      .flexColumnCenter();
+      .lift-txt {
+        padding: 40px;
+        width: 100%;
+      }
+    }
+    .horizon {
+      margin-top: 6%;
+      width: 100%;
+      @media @phone {
+        border-radius: 10px;
+      }
+    }
     h2 {
       padding: 15px;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
   }
 
   .space-images {
-    display: flex;
-    flex-wrap: wrap;
+    .flexWrap();
     width: 100%;
+
+    @media @phone {
+      .flexColumnCenter();
+
+      img.sky,
+      img.launch {
+        display: none;
+      }
+      img.blast {
+        width: 70%;
+      }
+    }
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone {
+        margin-right: 4%;
+      }
     }
   }
 
   .visit-planets {
     padding: 15px;
 
+    @media @phone {
+      .flexColumnCenter();
+      .visit-txt {
+        padding: 45px;
+        width: 100%;
+      }
+    }
     h3 {
       margin-top: 11px;
     }
@@ -45,10 +77,17 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @phone {
+      .flexColumnCenter();
+      width: 100%;
+    }
 
     .walk-text {
       width: 50%;
-
+      @media @phone {
+        width: 100%;
+        order: 2;
+      }
       h3 {
         margin-bottom: 10px;
       }
@@ -56,15 +95,69 @@
       p {
         margin-bottom: 26px;
       }
-
       .btn {
+        @media @phone {
+          width: 100%;
+        }
+        .btn-custom(@white, @darkBlue);
+        .customBtnStyle();
+        &:hover {
+          background: lighten(@darkBlue, 30%);
+          color: darken(@white, 99%);
+        }
+        p {
+          font-size: 1.6rem;
+          padding: 6%;
+          @media @phone {
+            font-weight: bold;
+          }
+        }
+      }
+      .subBox {
+        .flexWrap();
+        margin-top: 15%;
+        @media @phone {
+          .flexColumnCenter();
+          width: 100%;
+        }
+        background: white;
+        width: 300px;
+        border-radius: 12px;
+        .txtBox {
+          border-radius: 5px;
+          background: #23293b;
+          width: 220px;
+          border: none;
+        }
+        input {
+          border-radius: 4px;
+          margin-left: 4px;
+          border: none;
+        }
+        button {
+          width: 40px;
+          height: 25px;
+          border-radius: 12px;
+          border: none;
+          background: #23293b;
+          cursor: url('/img/pointer.png'), auto;
+          .fa-check {
+            color: red;
+            &:hover {
+              color: #27ae60;
+            }
+          }
+        }
       }
     }
-
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+      @media @phone {
+        width: 100%;
+        margin-bottom: 6%;
+        margin-left: 0;
+      }
       img {
         width: 100%;
         height: auto;
@@ -72,4 +165,4 @@
       }
     }
   }
-}// home
+} // home

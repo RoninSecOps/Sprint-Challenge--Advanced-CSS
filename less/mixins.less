@@ -1,1 +1,27 @@
 // Mixins Here
+.flexWrap() {
+  display: flex;
+  flex-wrap: wrap;
+}
+.center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.btn-custom(@fontColor, @bgColor) {
+  color: @fontColor;
+  background: @bgColor;
+  width: 25%;
+  cursor: url('/img/pointer.png'), auto;
+}
+.customBtnStyle() {
+border-radius: 5px;
+  text-align: center;
+}
+.flexColumnCenter() {
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
